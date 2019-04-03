@@ -6,11 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="coding-challenges" />
+        <module name="CodingChallenges" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="coding-challenges" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
