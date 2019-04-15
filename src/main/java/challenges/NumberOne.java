@@ -22,8 +22,8 @@ public class NumberOne {
         for (int i=0; i< numbers.length; i++){
             for (int j=0; j< numbers.length; j++){
                 if (numbers[i] + numbers[j]==target){
-                    twoValues[0]= i;
-                    twoValues[1]= j;
+                    twoValues[0]= i-1;
+                    twoValues[1]= j+1;
                 }
 
             }
