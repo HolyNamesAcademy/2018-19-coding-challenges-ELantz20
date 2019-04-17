@@ -29,6 +29,22 @@ public class NumberFive {
      * @return true if word1 and word2 are case-insensitive anagrams, false otherwise.
      */
     public boolean isAnagram(String word1, String word2) {
+        if (word1.length()!= word2.length()){
+            return false;
+        }
+        char [] characters= word1.toLowerCase().toCharArray();
+
+        for (char c : characters){
+            int index=word2.toLowerCase().indexOf(c);
+            if (index!=-1){
+                word2=word2.substring(0, index) + word2.substring(index + 1, word2.length());
+            }
+            else{
+                return false;
+            }
+
+        }
+      return word2.isEmpty();
 
     }
 }
